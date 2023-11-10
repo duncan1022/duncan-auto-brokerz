@@ -1,67 +1,56 @@
-
+/* Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap')
  *{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-padding-top: 1rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
   box-sizing: border-box;
 }
 
-
-.header {
-    background-color: grey;
-    color: white;
-    padding: 15px;
+/* variables */
+:root{
+  --main-color:#d90429 ;
+  --text-color: #020102;
+  --bg-color: #fff;
 }
 
-
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+img{
+  width: 100%
 }
 
-/* Style the side navigation */
-.sidenav {
-  height: 50%;
-  width: 200px;
+body{
+  color: const(--text-color);
+}
+
+.container{
+  max-width: 1068px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header{
+  display: block;
+  width: 100%;
   position: fixed;
-  z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
-  overflow-x: hidden;
+  z-index:100
 }
 
-
-/* Side navigation links */
-.sidenav a {
-  color: white;
-  padding: 16px;
-  text-decoration: none;
-  display: block;
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 35px;
 }
 
-/* Change color on hover */
-.sidenav a:hover {
-  background-color: #dddddd;
-  color: black;
+#menu-icon{
+  font-size: 24px;
+  cursor: pointer;
+  color: const(--text-color);
+  display: none;
 }
-
-/* Style the content */
-.introducton {
-  margin-left: 200px;
-  padding-left: 20px;
-}
-
-.Appointment {
-  margin-left: 200px;
-  padding-left: 20px;
-}
-
-.footer > div {
-  float: right; 
-  background-color: blue;
-  text-align: justify;
-  width: 25%;
-  margin-left: auto;
-  padding-left: 100px;
-}
-
-
