@@ -1,14 +1,14 @@
 /* Google Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap')
- *{
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  scroll-padding-top: 1rem;
-  scroll-behavior: smooth;
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+   padding: 0;
+    scroll-padding-top: 16px;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+   box-sizing: border-box;
 }
 
 /* variables */
@@ -19,7 +19,7 @@
 }
 
 section{
-  padding: 4rem 0 2 rem;
+  padding: 64px 0 32px;
 }
 
 img{
@@ -27,7 +27,7 @@ img{
 }
 
 body{
-  color: const(--text-color);
+  color: var(--text-color);
 }
 
 .container{
@@ -55,41 +55,42 @@ header{
 #menu-icon{
   font-size: 24px;
   cursor: pointer;
-  color: const(--text-color);
+  color: var(--text-color);
   display: none;
 }
 
 .logo{
-font-size: 1.2 rem;
+font-size: 19px;
 font-weight: 700;
-color: const(--text-color);
+color: var(--text-color);
 }
 
 .logospan {
-color: const(--main-color);
+color: var(--main-color);
 }
 
 .navbar{
   display: flex;
-  column-gap: 2 rem;
+  column-gap: 32px;
 }
 
 .navbar a {
-  color: const(--text-color);
-  font-size: 1 rem;
+  color: var(--text-color);
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: 500;
 }
 
 .navbar a:hover,
 .navbar .active {
-  color: const(--main-color);
-  border-bottom: 3px solid const(--main-color);
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
 }
 
 #search-icon{
   font-size: 24px;
   cursor: pointer;
+  color: var(--bg-color)
 }
 
 .search-box{
@@ -97,10 +98,10 @@ color: const(--main-color);
   top: 110%;
   right: 0;
   left: 0;
-  background: Const(--bg-color);
-  box-shadow: 4px 4px 20px rbg(15 54 55 / 10%);
-  border: 1px solid const(--main-color);
-  border-radius: 0.5 rem;
+  background: var(--bg-color);
+  box-shadow: 4px 4px 20px rbga(15 54 55 / 10%);
+  border: 1px solid var(--main-color);
+  border-radius: 8px;
   clip-path: circle(0% at 100% 0%);
 }
 
@@ -114,7 +115,7 @@ color: const(--main-color);
   border: none;
   outline: none;
   background: transparent;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .home{
@@ -129,3 +130,119 @@ color: const(--main-color);
   background-size: cover;
   background-position: center left;
 }
+
+.home-text{
+  padding-left: 130px;
+}
+
+.home-text h1{
+  font-size: 38px;
+}
+
+.home-text span{
+  color: var(--main-color)
+}
+
+.home-text p{
+  font-size: 15px;
+  font-weight: 300;
+  margin: 8px 38px;
+}
+
+.button{
+  padding: 10px 22px;
+  background: var(--main-color);
+  color: var(--bg-color);
+  font-weight: 400;
+}
+
+.button:hover{
+  background: var(--main-color) ;
+}
+
+.heading{
+  text-align: center;
+}
+
+.heading span{
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+.heading p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.cars-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.cars-container .box{
+  flex: 16px 16px 272px;
+  position: relative;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cars-container .box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.cars-container .box img:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.cars-container .box h2{
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  background: var(--bg-color);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.cars-container .box:hover h2{
+  background: var(--main-color);
+  color: var(--bg-color)
+}
+
+.about{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+}
+
+.about-img{
+  flex: 16 16 336px;
+}
+
+.about-text{
+  flex: 16px 16px 16px;
+}
+
+.about-text span{
+  font-weight: 500;
+  color: var(--main-color)
+}
+
+.about-text h2{
+  font-size: 27px;
+}
+
+.about-text p{
+  font-size: 15px;
+  margin: 8px 0 22px;
+}
+
