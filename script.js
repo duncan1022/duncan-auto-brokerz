@@ -1,3 +1,5 @@
-const h2 = document.createElement("h2");
-h2.textContent = "Call Today!";
-document.querySelector("body").appendChild(h2);
+let search = document.querySelector(".search-box");
+
+document.querySelector("#search-icon").onclick = () => {
+    search.classList.toggle("active");
+}

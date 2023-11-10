@@ -18,6 +18,10 @@
   --bg-color: #fff;
 }
 
+section{
+  padding: 4rem 0 2 rem;
+}
+
 img{
   width: 100%
 }
@@ -53,4 +57,75 @@ header{
   cursor: pointer;
   color: const(--text-color);
   display: none;
+}
+
+.logo{
+font-size: 1.2 rem;
+font-weight: 700;
+color: const(--text-color);
+}
+
+.logospan {
+color: const(--main-color);
+}
+
+.navbar{
+  display: flex;
+  column-gap: 2 rem;
+}
+
+.navbar a {
+  color: const(--text-color);
+  font-size: 1 rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navbar a:hover,
+.navbar .active {
+  color: const(--main-color);
+  border-bottom: 3px solid const(--main-color);
+}
+
+#search-icon{
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.search-box{
+  position: absolute;
+  top: 110%;
+  right: 0;
+  left: 0;
+  background: Const(--bg-color);
+  box-shadow: 4px 4px 20px rbg(15 54 55 / 10%);
+  border: 1px solid const(--main-color);
+  border-radius: 0.5 rem;
+  clip-path: circle(0% at 100% 0%);
+}
+
+.search-box.active{
+  clip-path: circle(144% at 100% 0%);
+  transition: 0.4s;
+}
+.search-box input{
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+}
+
+.home{
+  max-width: 1300px;
+  margin: auto;
+  width: 100%;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+  background: url(img/IMG_4403.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
 }
