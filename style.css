@@ -54,14 +54,8 @@ header{
   padding: 20px 35px;
 }
 
-#menu-icon{
-  font-size: 24px;
-  cursor: pointer;
-  color: var(--bg-color);
-  display: none;
-}
-
 .logo{
+  margin-right: 400px;
 font-size: 19px;
 font-weight: 700;
 color: var(--text-color);
@@ -87,37 +81,6 @@ color: var(--main-color);
 .navbar .active {
   color: var(--main-color);
   border-bottom: 3px solid var(--main-color);
-}
-
-#search-icon{
-  font-size: 24px;
-  cursor: pointer;
-  color: var(--bg-color)
-}
-
-.search-box{
-  position: absolute;
-  top: 110%;
-  right: 0;
-  left: 0;
-  background: var(--bg-color);
-  box-shadow: 4px 4px 20px rgba(15, 54, 55, 0.1);
-  border: 1px solid var(--main-color);
-  border-radius: 8px;
-  clip-path: circle(0% at 100% 0%);
-}
-
-.search-box.active{
-  clip-path: circle(144% at 100% 0%);
-  transition: 0.4s;
-}
-.search-box input{
-  width: 100%;
-  padding: 20px;
-  border: none;
-  outline: none;
-  background: transparent;
-  font-size: 16px;
 }
 
 .home{
@@ -274,62 +237,25 @@ color: var(--main-color);
   margin: 8px 0 22px;
 }
 
-.footer{
-  background: var(--main-color);
-  color:var(--bg-color);
+.aButton {
+  background: var(--bg-color);
+  color: var(--text-color)
+}
+
+.footer {  
+  text-align:center;
+  width: 100%;
+  padding: 20px;
+  background: var(--pg-color);
+  color: var(--text-color);
   border-top: 2px solid var(--main-color)
 }
 
-.footer-container{
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-}
-
-.footer-container .contact{
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-}
-.footer-conatiner .contact-text span{
-    font-weight: 500;
-    color: var(--main-color)
-  }
-
-.footer-container .footer-box{
-  display: flex;
-  flex-direction: column;
-
-}
-
-.social {
-  display: flex;
-  align-items: center;
-}
-.social a{
-  font-size: 24px;
-  color: var(--bg-color);
-  margin-right: 16px;
-}
-.social a:hover{
-  color: var(--main-color);
-}
-
-.footer-box h3{
-  font-size: 40px;
-  font-weight: 400;
-  margin-bottom: 16px;
-}
-
-.footer-box a, 
-.footer-box p{
-  text-size: 30px;
-  color:var(--text-color);
-  margin-bottom: 10px;
-}
-
-.footer-box a:hover {
-  color:var(--main-color)
+#details {
+  float: left; 
+  padding: 20px;
+  text-align: center;
+  width: 25%;
 }
 
 .copyright{
