@@ -13,9 +13,10 @@
 
 /* variables */
 :root{
-  --main-color:#d90429 ;
-  --text-color: #020102;
-  --bg-color: #fff;
+  --main-color:#06f ;
+  --text-color: #fff;
+  --bg-color: #A1a1a1;
+  --pg-color: #000000;
 }
 
 section{
@@ -27,6 +28,7 @@ img{
 }
 
 body{
+  background: var(--pg-color);
   color: var(--text-color);
 }
 
@@ -55,7 +57,7 @@ header{
 #menu-icon{
   font-size: 24px;
   cursor: pointer;
-  color: var(--text-color);
+  color: var(--bg-color);
   display: none;
 }
 
@@ -65,7 +67,7 @@ font-weight: 700;
 color: var(--text-color);
 }
 
-.logospan {
+.logo span {
 color: var(--main-color);
 }
 
@@ -99,7 +101,7 @@ color: var(--main-color);
   right: 0;
   left: 0;
   background: var(--bg-color);
-  box-shadow: 4px 4px 20px rbga(15 54 55 / 10%);
+  box-shadow: 4px 4px 20px rgba(15, 54, 55, 0.1);
   border: 1px solid var(--main-color);
   border-radius: 8px;
   clip-path: circle(0% at 100% 0%);
@@ -125,7 +127,7 @@ color: var(--main-color);
   min-height: 640px;
   display: flex;
   align-items: center;
-  background: url(img/IMG_4403.JPG);
+  background: url(//wsl.localhost/Ubuntu/home/laptop22/development/code/duncan-auto-brokerz/img/IMG_4403.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center left;
@@ -165,24 +167,25 @@ color: var(--main-color);
 }
 
 .heading span{
+  font-size: 60px;
   font-weight: 500;
   color: var(--main-color);
 }
 
 .heading p {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 300;
 }
 
-.cars-container{
+.cars-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
-  margin-top: 32px;
+  gap: 2em;
+  margin-top: 2em;
 }
 
 .cars-container .box{
-  flex: 16px 16px 272px;
+  flex: 1 1 272px;
   position: relative;
   height: 200px;
   border-radius: 8px;
@@ -217,24 +220,17 @@ color: var(--main-color);
   color: var(--bg-color)
 }
 
-.contact{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 24px;
+.appointment{
+  text-align: center;
 }
 
-.contact-text span{
-  font-weight: 500;
+.appointment-text h2{
+  font-size: 80px;
   color: var(--main-color)
 }
 
-.contact-text h2{
-  font-size: 27px;
-}
-
-.contact-text p{
-  font-size: 15px;
+.appointment-text p{
+  font-size: 60px;
   margin: 8px 0 22px;
 }
 
@@ -246,31 +242,42 @@ color: var(--main-color);
 }
 
 .about-img{
-  flex: 16 16 336px;
+  max-width: 1300px;
+  margin: auto;
+  width: 100%;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+  background: url(//wsl.localhost/Ubuntu/home/laptop22/development/code/duncan-auto-brokerz/img/stock1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
 }
 
 .about-text{
-  flex: 16px 16px 16px;
+  flex: 1 1 16px;
 }
 
 .about-text span{
+  font-size: 80px;
   font-weight: 500;
   color: var(--main-color)
 }
 
 .about-text h2{
-  font-size: 27px;
+  font-size: 40px;
 }
 
 .about-text p{
+  text-indent: 20px;
   font-size: 15px;
   margin: 8px 0 22px;
 }
 
 .footer{
   background: var(--main-color);
-  color:var(--bg-color)
-  border 2px solid var(--main-color)
+  color:var(--bg-color);
+  border-top: 2px solid var(--main-color)
 }
 
 .footer-container{
@@ -280,8 +287,15 @@ color: var(--main-color);
 }
 
 .footer-container .contact{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.footer-conatiner .contact-text span{
+    font-weight: 500;
+    color: var(--main-color)
+  }
 
-} 
 .footer-container .footer-box{
   display: flex;
   flex-direction: column;
@@ -302,13 +316,14 @@ color: var(--main-color);
 }
 
 .footer-box h3{
-  font-size: 16px;
+  font-size: 40px;
   font-weight: 400;
   margin-bottom: 16px;
 }
 
 .footer-box a, 
 .footer-box p{
+  text-size: 30px;
   color:var(--text-color);
   margin-bottom: 10px;
 }
@@ -320,6 +335,112 @@ color: var(--main-color);
 .copyright{
   padding: 20px;
   text-align: center;
-  color: var(--main-color);
-  background: var(--text-color);
+  color: var(--text-color);
+  background: var(--main-color);
 }
+
+/*Making Responsive*/
+@media (max-width: 1080px){
+  .container {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 991px){
+  .nav{
+    padding: 15px 20px;
+  }
+  section {
+    padding: 48px 0 16px;
+  }
+  .home-text {
+    padding-left: 32px;
+  }
+  .home-text h1{
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 920px){
+  #search-icon{
+    color: var(--text-color);
+  }
+}
+
+@media (max-width: 768px){
+  .search-box input{
+    padding: 15px;
+  }
+  .nav{
+    padding: 10px 0;
+  }
+  #menu-icon{
+    display: initial;
+  }
+  .navbar{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    row-gap: 8px;
+    text-align: center;
+    box-shadow: 4px 4px 20px rgba(15 54 55 / 20%);
+    clip-path: circle(0% at 0% 0%);
+    transition: 0.6s;
+  }
+.navbar a {
+  display: block;
+  padding: 15px;
+}
+.navbar a:hover,
+.navbar .active{
+  border-bottom: none;
+  background: var(--main-color);
+  color: var(--bg-color)
+
+}
+.navbar .active{
+  clip-path: circle(144% at 0% 0%);
+}
+}
+
+@media (max-width: 727px){
+  .heading h2{
+    font-size: 16px;
+  }
+  .about{
+    flex-direction: column-reverse;
+  }
+  .about-text{
+    text-align: center;
+  }
+  .about-text h2{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 607px){
+  .footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 360px){
+  .search-box input{
+    padding: 11px;
+  }
+    .home {
+      min-height: 500px;
+    }
+    .home-text h1 {
+      font-size: 32px;
+    }
+    .home-text p br{
+      display: contents;
+    }
+  }
